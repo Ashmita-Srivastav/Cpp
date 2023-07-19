@@ -6,19 +6,28 @@ int main(){
     cin >> day;
     switch (day){
         case 1:
-        cout<<"Monday";
+            cout<<"Monday";
+            break;
         case 2:
-        cout<<"Monday";
+            cout<<"Tuesday";
+            break;
         case 3:
-        cout<<"Monday";
+            cout<<"Wednesday";
+            break;
         case 4:
-        cout<<"Monday";
+            cout<<"Thursday";
+            break;
         case 5:
-        cout<<"Monday";
+            cout<<"Friday";   
+            break;
         case 6:
-        cout<<"Monday";
+            cout<<"Saturday";
+            break;
         case 7:
-        cout<<"Monday";        
-
+            cout<<"Sunday";  
+            break;
+        default:
+            cout<<"Invalid";
     }
+    cout<<"Check";
 }
