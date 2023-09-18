@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 int main(){
     int n;
@@ -8,8 +9,8 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>B[i];
     }
-    int max=B[0];
-    for(int i=1;i<n;i++){
+    int max=INT_MIN;
+    for(int i=0;i<n;i++){
         if(max<B[i]){
             max=B[i];
         }
