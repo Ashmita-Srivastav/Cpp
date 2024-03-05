@@ -1,18 +1,17 @@
-#include<vector>
-#include <iostream>
+#include<bits/stdc++.h>
+
 using namespace std;
-class Solution {
-public:
-    bool check(vector<int>& nums) {
-     int k = 0;
-     int n=nums.size();
-        for(int i=0;i<n-1;i++){
-            if(nums[i] > nums[(i+1)]){
-                k++;
-            }
-        }
-        if(nums[0] < nums[n-1])
-            k++;
-        return (k<=1);
-    }
-};
+bool check(int arr[], int n) {
+  for (int i = 1; i < n; i++) {
+    if (arr[i] < arr[i - 1])
+      return false;
+  }
+
+  return true;
+}
+int main(){
+    int arr[] = {1,2,3,4,5};
+    int n = 5;
+    printf("%s",check(arr,n) ?"true":"false");
+    
+}
